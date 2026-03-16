@@ -1,17 +1,9 @@
 # GUI Lab
 
-Энэ ажилд Java Swing ашиглан GUI дууриалгаж хийсэн.
+Java Swing ашиглан GUI туршилтын програм хийсэн.
 
-Сонгосон програм:
-ATM system
-
-Хийсэн дэлгэцүүд:
+Screens:
 - Login screen
 - Menu screen
-- Withdraw screen
 
-Товч дарахад console дээр хэвлэдэг.
-
-## Screenshot
-
-screenshots/login.png
+Button дарахад console дээр хэвлэнэ.
