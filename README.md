@@ -1,17 +1,41 @@
-# GUI Lab
+import javax.swing.*;
+import java.awt.event.*;
 
-Энэ ажилд Java Swing ашиглан GUI дууриалгаж хийсэн.
+public class LoginGUI {
 
-Сонгосон програм:
-ATM system
+    public static void main(String[] args) {
 
-Хийсэн дэлгэцүүд:
-- Login screen
-- Menu screen
-- Withdraw screen
+        JFrame frame = new JFrame("Login");
 
-Товч дарахад console дээр хэвлэдэг.
+        JLabel userLabel = new JLabel("Username:");
+        userLabel.setBounds(50,50,100,30);
 
-## Screenshot
+        JTextField userText = new JTextField();
+        userText.setBounds(150,50,150,30);
 
-screenshots/login.png
+        JLabel passLabel = new JLabel("Password:");
+        passLabel.setBounds(50,100,100,30);
+
+        JPasswordField passText = new JPasswordField();
+        passText.setBounds(150,100,150,30);
+
+        JButton loginButton = new JButton("Login");
+        loginButton.setBounds(150,150,100,30);
+
+        loginButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Login button clicked");
+            }
+        });
+
+        frame.add(userLabel);
+        frame.add(userText);
+        frame.add(passLabel);
+        frame.add(passText);
+        frame.add(loginButton);
+
+        frame.setSize(400,300);
+        frame.setLayout(null);
+        frame.setVisible(true);
+    }
+}
